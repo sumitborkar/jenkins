@@ -1,0 +1,26 @@
+## How to install epel repository on Rhel 8.0 ##
+#Install epel repository using this command:
+
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+OR
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+#Verify the repository
+
+dnf repolist -v
+OR
+yum repolist
+OR
+rpm -ql epel-release
+
+#List all packages available in epel repo
+
+dnf repository-packages epel list
+
+#remove epel from system
+
+dnf remove epel-release
+OR
+yum remove epel-release
+
+Now you are done.
