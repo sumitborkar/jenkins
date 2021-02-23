@@ -1,0 +1,11 @@
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+
+yum install jenkins
+
+## Java version required ##
+
+• 2.164 (2019-02) and newer: Java 8 or Java 11
+• 2.54 (2017-04) and newer: Java 8
+• 1.612 (2015-05) and newer: Java 7
